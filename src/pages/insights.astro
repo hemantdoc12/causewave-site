@@ -61,65 +61,20 @@ const base = import.meta.env.BASE_URL;
   <!-- Articles Grid -->
   <section class="bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 py-8">
-      <div class="text-center mb-6">
-        <span class="text-sky-600 font-semibold text-sm">EXPLORE BY CATEGORY</span>
-        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mt-1">Latest Articles</h2>
-      </div>
-
-      <!-- Category Filters -->
-      <div class="flex flex-wrap justify-center gap-2 mb-6">
-        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-white" data-category="all">All</button>
-        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-100" data-category="healthcare">Healthcare</button>
-        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-100" data-category="csr">CSR</button>
-        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-100" data-category="technology">Technology</button>
-        <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-100" data-category="leadership">Leadership</button>
+      <div class="mb-6">
+        <span class="text-sky-600 font-semibold text-sm">LATEST</span>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mt-1">Published Articles</h2>
       </div>
 
       <!-- Articles -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <article class="article-card bg-white border rounded-xl overflow-hidden hover:-translate-y-1 transition-all" data-category="technology csr">
-          <div class="bg-gradient-to-br from-sky-500 to-sky-700 p-4 text-white">
-            <span class="inline-block bg-white/20 px-2 py-0.5 rounded-full text-xs mb-2">Technology & CSR</span>
-            <h3 class="text-base font-semibold">Technology-Enabled CSR: Lessons from the Field</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">How digital platforms transformed our vaccination drive.</p>
-            <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
-              <span>Dr. Hemant L. Patel</span>
-              <span>•</span>
-              <span>Coming Soon</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700">
-              Read More <i class="fa-solid fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="article-card bg-white border rounded-xl overflow-hidden hover:-translate-y-1 transition-all" data-category="healthcare leadership">
-          <div class="bg-gradient-to-br from-teal-500 to-teal-700 p-4 text-white">
-            <span class="inline-block bg-white/20 px-2 py-0.5 rounded-full text-xs mb-2">Community Engagement</span>
-            <h3 class="text-base font-semibold">Overcoming Cultural Barriers in Health Initiatives</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">Building trust with tribal populations for real adoption.</p>
-            <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
-              <span>Dr. Hemant L. Patel</span>
-              <span>•</span>
-              <span>Coming Soon</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700">
-              Read More <i class="fa-solid fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </article>
-
+      <div class="grid md:grid-cols-2 gap-4">
         <article class="article-card bg-white border rounded-xl overflow-hidden hover:-translate-y-1 transition-all" data-category="csr">
           <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 p-4 text-white">
             <span class="inline-block bg-white/20 px-2 py-0.5 rounded-full text-xs mb-2">CSR Strategy</span>
             <h3 class="text-base font-semibold">Redefining CSR Resource Mapping for India's NGOs</h3>
           </div>
           <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">How technology can unlock ₹20,000+ crore in untapped funding.</p>
+            <p class="text-slate-600 text-sm mb-3">How technology can unlock ₹20,000+ crore in untapped funding for NGOs through data-driven collaboration.</p>
             <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
               <span>Dr. Hemant L. Patel</span>
               <span>•</span>
@@ -137,47 +92,11 @@ const base = import.meta.env.BASE_URL;
             <h3 class="text-base font-semibold">A Problem Unacknowledged is a Solution Out of Reach</h3>
           </div>
           <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">Addressing India's NGO funding crisis and FCRA changes.</p>
+            <p class="text-slate-600 text-sm mb-3">Addressing India's NGO funding crisis: How FCRA changes and USAID withdrawal are forcing organizations to adapt.</p>
             <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
               <span>Dr. Hemant L. Patel</span>
               <span>•</span>
               <span>5 min read</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700">
-              Read More <i class="fa-solid fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="article-card bg-white border rounded-xl overflow-hidden hover:-translate-y-1 transition-all" data-category="technology">
-          <div class="bg-gradient-to-br from-sky-600 to-indigo-600 p-4 text-white">
-            <span class="inline-block bg-white/20 px-2 py-0.5 rounded-full text-xs mb-2">AI & Innovation</span>
-            <h3 class="text-base font-semibold">The Art of Sahdev: Ancient Wisdom for Modern AI Mastery</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">Strategic wisdom from Mahabharata for prompt engineering.</p>
-            <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
-              <span>Dr. Hemant L. Patel</span>
-              <span>•</span>
-              <span>6 min read</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700">
-              Read More <i class="fa-solid fa-arrow-right ml-1"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="article-card bg-white border rounded-xl overflow-hidden hover:-translate-y-1 transition-all" data-category="healthcare">
-          <div class="bg-gradient-to-br from-rose-500 to-rose-700 p-4 text-white">
-            <span class="inline-block bg-white/20 px-2 py-0.5 rounded-full text-xs mb-2">Healthcare Policy</span>
-            <h3 class="text-base font-semibold">Commentary: Family Identifier Required?</h3>
-          </div>
-          <div class="p-4">
-            <p class="text-slate-600 text-sm mb-3">Analyzing India's health identification systems.</p>
-            <div class="flex items-center gap-2 text-xs text-slate-500 mb-3">
-              <span>Dr. Hemant L. Patel</span>
-              <span>•</span>
-              <span>3 min read</span>
             </div>
             <a href="#" class="inline-flex items-center text-sky-600 text-sm font-semibold hover:text-sky-700">
               Read More <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -200,31 +119,3 @@ const base = import.meta.env.BASE_URL;
     </div>
   </section>
 </BaseLayout>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const articles = document.querySelectorAll('.article-card');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => {
-          b.classList.remove('bg-slate-900', 'text-white');
-          b.classList.add('border', 'border-slate-200');
-        });
-        btn.classList.add('bg-slate-900', 'text-white');
-        btn.classList.remove('border', 'border-slate-200');
-
-        const category = btn.getAttribute('data-category');
-
-        articles.forEach(article => {
-          if (category === 'all' || article.getAttribute('data-category').includes(category)) {
-            article.style.display = '';
-          } else {
-            article.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-</script>
