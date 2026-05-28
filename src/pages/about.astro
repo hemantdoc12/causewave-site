@@ -1,136 +1,100 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Causewave Innovations LLP - CSR Consulting</title>
-  <meta name="description" content="Causewave bridges the gap between CSR compliance and real community impact. Learn how we help companies deliver measurable, trusted CSR programs across India.">
-  
-  <meta property="og:title" content="About Causewave | CSR Strategy & Impact">
-  <meta property="og:description" content="We help companies design, implement, and measure CSR initiatives that satisfy boards, regulators, and communities.">
-  <meta property="og:image" content="https://hemantdoc12.github.io/causewave-site/logo_1.png">
-  <meta property="og:url" content="https://hemantdoc12.github.io/causewave-site/about">
-  <meta property="og:type" content="website">
-  
-  <link rel="canonical" href="https://hemantdoc12.github.io/causewave-site/about">
-  <link rel="stylesheet" href="/src/styles/global.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body class="bg-slate-50">
-  <!-- Navbar with Mobile Menu -->
-  <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
-    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-      <div class="flex items-center gap-x-3">
-        <img src="/logo_2.png" alt="Causewave" class="h-10 w-auto">
-      </div>
-
-      <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
-        <a href="/" class="hover:text-sky-600">Home</a>
-        <a href="/services" class="hover:text-sky-600">Services</a>
-        <a href="/about" class="text-sky-600 font-semibold">About</a>
-        <a href="/founder" class="hover:text-sky-600">Leadership</a>
-        <a href="/contact" class="hover:text-sky-600">Contact</a>
-      </div>
-
-      <div class="flex items-center gap-x-4">
-        <a href="/contact" class="hidden md:inline-flex px-6 py-2.5 border border-slate-300 rounded-3xl text-sm font-semibold hover:bg-slate-100">Talk to us</a>
-        <a href="/contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-3xl text-sm font-semibold">Get Started</a>
-
-        <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600">
-          <i class="fa-solid fa-bars text-xl"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-8 py-6">
-      <div class="flex flex-col gap-y-4 text-sm font-medium">
-        <a href="/" class="py-2 text-slate-600">Home</a>
-        <a href="/services" class="py-2 text-slate-600">Services</a>
-        <a href="/about" class="py-2 text-sky-600 font-semibold">About Us</a>
-        <a href="/founder" class="py-2 text-slate-600">Leadership</a>
-        <a href="/contact" class="py-2 text-slate-600">Contact</a>
-        <div class="pt-4 border-t flex flex-col gap-y-3">
-          <a href="/contact" class="py-3 text-center border border-slate-300 rounded-3xl font-semibold">Talk to our team</a>
-          <a href="/contact" class="py-3 text-center bg-slate-900 text-white rounded-3xl font-semibold">Start a Project</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <div class="max-w-screen-2xl mx-auto px-8 py-20">
-    <h1 class="text-6xl font-semibold tracking-tight">Why Causewave Exists</h1>
-    <div class="max-w-3xl mt-8 text-xl text-slate-600 leading-relaxed space-y-6">
-      <p>Most CSR programs struggle to be both compliant and truly impactful. At Causewave, we bridge that gap.</p>
-      <p>We help companies design, implement, and measure CSR initiatives that satisfy boards, regulators, and — most importantly — the communities they aim to serve.</p>
+<BaseLayout
+  title="About Us | Causewave Innovations LLP - CSR Consulting"
+  description="Causewave bridges the gap between CSR compliance and real community impact. Learn how we help companies deliver measurable, trusted CSR programs across India."
+  ogTitle="About Causewave | CSR Strategy & Impact"
+  ogDescription="We help companies design, implement, and measure CSR initiatives that satisfy boards, regulators, and communities."
+  canonicalPath="/about"
+  activePage="about"
+>
+  <!-- Hero -->
+  <div class="bg-slate-900 text-white py-20">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h1 class="text-6xl font-semibold tracking-tight">Why Causewave Exists</h1>
+      <p class="mt-4 text-xl text-slate-300 max-w-2xl">Most CSR programs struggle to be both compliant and truly impactful. We bridge that gap.</p>
     </div>
   </div>
 
-  <!-- Professional Footer -->
-  <footer class="bg-slate-900 text-slate-400 text-sm">
-    <div class="max-w-screen-2xl mx-auto px-8 pt-16 pb-12">
-      <div class="grid md:grid-cols-12 gap-y-12">
-        <div class="md:col-span-5">
-          <div class="flex items-center gap-x-3 mb-6">
-            <img src="/logo_2.png" alt="Causewave" class="h-9 w-auto">
-            <span class="font-display text-2xl text-white font-semibold tracking-tighter">Causewave</span>
-          </div>
-          <div class="max-w-xs text-slate-400">
-            Causewave Innovations LLP<br>
-            Ahmedabad, Gujarat, India<br>
-            <a href="mailto:hello@causewave.co.in" class="hover:text-white">hello@causewave.co.in</a>
-          </div>
+  <!-- Mission -->
+  <div class="max-w-screen-2xl mx-auto px-8 py-20">
+    <div class="max-w-3xl text-xl text-slate-600 leading-relaxed space-y-6">
+      <p>At Causewave, we help companies design, implement, and measure CSR initiatives that satisfy boards, regulators, and — most importantly — the communities they aim to serve.</p>
+      <p>Our approach combines deep statutory knowledge with on-the-ground execution experience. We don't just write reports — we build programs that work in the real world.</p>
+    </div>
+  </div>
 
-          <div class="flex gap-x-5 mt-8">
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter text-xl"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-xl"></i></a>
+  <!-- What Sets Us Apart -->
+  <section class="bg-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20">
+      <span class="text-sky-600 font-semibold">OUR APPROACH</span>
+      <h2 class="text-5xl font-semibold tracking-tight mt-4 mb-16">What sets Causewave apart</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-3xl border bg-slate-50">
+          <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-shield-halved text-3xl text-sky-600"></i>
           </div>
+          <h3 class="text-2xl font-semibold mb-3">Compliance-First Thinking</h3>
+          <p class="text-slate-600">Every recommendation starts with statutory requirements and board expectations, ensuring your CSR program is audit-ready from day one.</p>
         </div>
 
-        <div class="md:col-span-3">
-          <div class="font-semibold text-white mb-4 text-xs tracking-widest">COMPANY</div>
-          <div class="space-y-2.5 text-sm">
-            <a href="/about" class="block hover:text-white">About Us</a>
-            <a href="/founder" class="block hover:text-white">Leadership</a>
-            <a href="#" class="block hover:text-white">Careers</a>
+        <div class="p-8 rounded-3xl border bg-slate-50">
+          <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-map-location-dot text-3xl text-teal-600"></i>
           </div>
+          <h3 class="text-2xl font-semibold mb-3">Last-Mile Expertise</h3>
+          <p class="text-slate-600">With 18+ years in public health delivery, we know what it takes to execute programs in India's most challenging environments.</p>
         </div>
 
-        <div class="md:col-span-4">
-          <div class="font-semibold text-white mb-4 text-xs tracking-widest">LEGAL & MORE</div>
-          <div class="space-y-2.5 text-sm">
-            <a href="#" class="block hover:text-white">Privacy Policy</a>
-            <a href="#" class="block hover:text-white">Terms of Service</a>
-            <a href="https://github.com/hemantdoc12/causewave-site" target="_blank" class="block hover:text-white flex items-center gap-x-1">View Source on GitHub <i class="fa-brands fa-github text-xs"></i></a>
+        <div class="p-8 rounded-3xl border bg-slate-50">
+          <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fa-solid fa-database text-3xl text-emerald-600"></i>
           </div>
-        </div>
-      </div>
-
-      <div class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs">
-        <div>© 2026 Causewave Innovations LLP. All rights reserved.</div>
-        <div class="mt-3 md:mt-0 flex items-center gap-x-2">
-          <span>Designed for impact.</span>
-          <span class="text-emerald-500">•</span>
-          <span>Made with purpose in India</span>
+          <h3 class="text-2xl font-semibold mb-3">Data-Driven Impact</h3>
+          <p class="text-slate-600">We build M&E frameworks that produce credible, quantifiable evidence of impact — not just anecdotes.</p>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+  <!-- By the Numbers -->
+  <section>
+    <div class="max-w-screen-2xl mx-auto px-8 py-20">
+      <span class="text-sky-600 font-semibold">TRACK RECORD</span>
+      <h2 class="text-5xl font-semibold tracking-tight mt-4 mb-16">Impact by the numbers</h2>
 
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileBtn.innerHTML = mobileMenu.classList.contains('hidden') ? 
-        '<i class="fa-solid fa-bars text-xl"></i>' : 
-        '<i class="fa-solid fa-times text-xl"></i>';
-    });
-  </script>
-</body>
-</html>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white border p-10 rounded-3xl text-center">
+          <div class="text-5xl font-bold text-sky-600 mb-3">18+</div>
+          <div class="text-slate-600 font-medium">Years in Public Health</div>
+        </div>
+        <div class="bg-white border p-10 rounded-3xl text-center">
+          <div class="text-5xl font-bold text-teal-600 mb-3">33L+</div>
+          <div class="text-slate-600 font-medium">Single-Day Vaccination Record</div>
+        </div>
+        <div class="bg-white border p-10 rounded-3xl text-center">
+          <div class="text-5xl font-bold text-emerald-600 mb-3">5+</div>
+          <div class="text-slate-600 font-medium">States Covered</div>
+        </div>
+        <div class="bg-white border p-10 rounded-3xl text-center">
+          <div class="text-5xl font-bold text-sky-600 mb-3">SKOCH</div>
+          <div class="text-slate-600 font-medium">Gold Award</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20 text-center">
+      <h2 class="text-5xl font-semibold tracking-tight mb-6">Let's build something meaningful together</h2>
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+        Talk to our team about how Causewave can help your organization deliver CSR programs that are compliant, measurable, and genuinely trusted by communities.
+      </p>
+      <a href="/contact" class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Start a Conversation</a>
+    </div>
+  </section>
+</BaseLayout>

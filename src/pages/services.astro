@@ -1,66 +1,15 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | CSR Strategy, Implementation & Reporting | Causewave</title>
-  <meta name="description" content="End-to-end CSR support across strategy, program design, field implementation, monitoring, reporting, and stakeholder communication. Practical expertise backed by 18+ years of public health leadership.">
-  
-  <meta property="og:title" content="CSR Services | Causewave Innovations LLP">
-  <meta property="og:description" content="We support the full CSR lifecycle — from strategy to impact reporting — with practical, field-tested expertise.">
-  <meta property="og:image" content="https://hemantdoc12.github.io/causewave-site/logo_1.png">
-  <meta property="og:url" content="https://hemantdoc12.github.io/causewave-site/services">
-  <meta property="og:type" content="website">
-  
-  <link rel="canonical" href="https://hemantdoc12.github.io/causewave-site/services">
-  <link rel="stylesheet" href="/src/styles/global.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body class="bg-slate-50">
-  <!-- Navbar with Mobile Menu -->
-  <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
-    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-      <div class="flex items-center gap-x-3">
-        <img src="/logo_2.png" alt="Causewave" class="h-10 w-auto">
-      </div>
-
-      <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
-        <a href="/" class="hover:text-sky-600">Home</a>
-        <a href="/services" class="text-sky-600 font-semibold">Services</a>
-        <a href="/about" class="hover:text-sky-600">About</a>
-        <a href="/founder" class="hover:text-sky-600">Leadership</a>
-        <a href="/contact" class="hover:text-sky-600">Contact</a>
-      </div>
-
-      <div class="flex items-center gap-x-4">
-        <a href="/contact" class="hidden md:inline-flex px-6 py-2.5 border border-slate-300 rounded-3xl text-sm font-semibold hover:bg-slate-100">Talk to us</a>
-        <a href="/contact" class="px-5 py-2.5 bg-slate-900 text-white rounded-3xl text-sm font-semibold">Get Started</a>
-
-        <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600">
-          <i class="fa-solid fa-bars text-xl"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-8 py-6">
-      <div class="flex flex-col gap-y-4 text-sm font-medium">
-        <a href="/" class="py-2 text-slate-600">Home</a>
-        <a href="/services" class="py-2 text-sky-600 font-semibold">Services</a>
-        <a href="/about" class="py-2 text-slate-600">About Us</a>
-        <a href="/founder" class="py-2 text-slate-600">Leadership</a>
-        <a href="/contact" class="py-2 text-slate-600">Contact</a>
-        <div class="pt-4 border-t flex flex-col gap-y-3">
-          <a href="/contact" class="py-3 text-center border border-slate-300 rounded-3xl font-semibold">Talk to our team</a>
-          <a href="/contact" class="py-3 text-center bg-slate-900 text-white rounded-3xl font-semibold">Start a Project</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
+<BaseLayout
+  title="Our Services | CSR Strategy, Implementation & Reporting | Causewave"
+  description="End-to-end CSR support across strategy, program design, field implementation, monitoring, reporting, and stakeholder communication. Practical expertise backed by 18+ years of public health leadership."
+  ogTitle="CSR Services | Causewave Innovations LLP"
+  ogDescription="We support the full CSR lifecycle — from strategy to impact reporting — with practical, field-tested expertise."
+  canonicalPath="/services"
+  activePage="services"
+>
   <!-- Header -->
   <div class="bg-slate-900 text-white py-20">
     <div class="max-w-screen-2xl mx-auto px-8 text-center">
@@ -72,84 +21,135 @@
   <!-- Services Grid -->
   <div class="max-w-screen-2xl mx-auto px-8 py-20">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div onclick="showModal(0)" class="service-card bg-white p-10 rounded-3xl border cursor-pointer hover:-translate-y-1 transition-all">
+
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
         <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
           <i class="fa-solid fa-handshake text-3xl text-sky-600"></i>
         </div>
         <h3 class="text-3xl font-semibold mb-4">CSR Strategy & Compliance</h3>
         <p class="text-slate-600">Shape CSR priorities, annual action plans, partner alignment, and reporting readiness around clear statutory and board expectations.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> CSR policy & governance framework</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Annual CSR action plan</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Board & committee advisory</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Regulatory compliance audit</li>
+        </ul>
       </div>
 
-      <!-- Add other service cards -->
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
+        <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa-solid fa-sitemap text-3xl text-teal-600"></i>
+        </div>
+        <h3 class="text-3xl font-semibold mb-4">Program Design & Budgeting</h3>
+        <p class="text-slate-600">Design practical CSR initiatives across health, education, livelihoods, sustainability, and community development with measurable outputs.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Needs assessment & baseline studies</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Theory of change development</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Budget planning & optimization</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Partner selection & due diligence</li>
+        </ul>
+      </div>
+
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
+        <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa-solid fa-people-carry-box text-3xl text-emerald-600"></i>
+        </div>
+        <h3 class="text-3xl font-semibold mb-4">Field Implementation</h3>
+        <p class="text-slate-600">On-ground program execution with community mobilization, training, and last-mile delivery backed by real field experience.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Community engagement & mobilization</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Workforce training & capacity building</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Logistics & supply chain support</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Real-time field coordination</li>
+        </ul>
+      </div>
+
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
+        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa-solid fa-magnifying-glass-chart text-3xl text-sky-600"></i>
+        </div>
+        <h3 class="text-3xl font-semibold mb-4">Monitoring & Evaluation</h3>
+        <p class="text-slate-600">Rigorous M&E frameworks that track outcomes, surface insights, and enable data-driven course correction throughout the program lifecycle.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Indicator design & frameworks</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Field data collection systems</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Periodic progress dashboards</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-600 mt-1"></i> Outcome attribution analysis</li>
+        </ul>
+      </div>
+
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
+        <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa-solid fa-file-lines text-3xl text-teal-600"></i>
+        </div>
+        <h3 class="text-3xl font-semibold mb-4">Impact Reporting</h3>
+        <p class="text-slate-600">Board-ready, regulator-compliant impact reports that tell a credible story backed by field data and rigorous analysis.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Annual CSR report preparation</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Visual impact dashboards</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Stakeholder-specific narratives</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-teal-600 mt-1"></i> Third-party audit support</li>
+        </ul>
+      </div>
+
+      <div class="service-card bg-white p-10 rounded-3xl border hover:-translate-y-1 transition-all">
+        <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+          <i class="fa-solid fa-bullhorn text-3xl text-emerald-600"></i>
+        </div>
+        <h3 class="text-3xl font-semibold mb-4">Stakeholder Communication</h3>
+        <p class="text-slate-600">Compelling storytelling and stakeholder engagement that builds trust, showcases impact, and strengthens brand reputation.</p>
+        <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> CSR storytelling & content</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Community feedback mechanisms</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Media & PR coordination</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Government & NGO liaison</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 
-  <!-- Professional Footer -->
-  <footer class="bg-slate-900 text-slate-400 text-sm">
-    <div class="max-w-screen-2xl mx-auto px-8 pt-16 pb-12">
-      <div class="grid md:grid-cols-12 gap-y-12">
-        <div class="md:col-span-5">
-          <div class="flex items-center gap-x-3 mb-6">
-            <img src="/logo_2.png" alt="Causewave" class="h-9 w-auto">
-            <span class="font-display text-2xl text-white font-semibold tracking-tighter">Causewave</span>
-          </div>
-          <div class="max-w-xs text-slate-400">
-            Causewave Innovations LLP<br>
-            Ahmedabad, Gujarat, India<br>
-            <a href="mailto:hello@causewave.co.in" class="hover:text-white">hello@causewave.co.in</a>
-          </div>
-
-          <div class="flex gap-x-5 mt-8">
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter text-xl"></i></a>
-            <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-xl"></i></a>
-          </div>
-        </div>
-
-        <div class="md:col-span-3">
-          <div class="font-semibold text-white mb-4 text-xs tracking-widest">COMPANY</div>
-          <div class="space-y-2.5 text-sm">
-            <a href="/about" class="block hover:text-white">About Us</a>
-            <a href="/founder" class="block hover:text-white">Leadership</a>
-            <a href="#" class="block hover:text-white">Careers</a>
-          </div>
-        </div>
-
-        <div class="md:col-span-4">
-          <div class="font-semibold text-white mb-4 text-xs tracking-widest">LEGAL & MORE</div>
-          <div class="space-y-2.5 text-sm">
-            <a href="#" class="block hover:text-white">Privacy Policy</a>
-            <a href="#" class="block hover:text-white">Terms of Service</a>
-            <a href="https://github.com/hemantdoc12/causewave-site" target="_blank" class="block hover:text-white flex items-center gap-x-1">View Source on GitHub <i class="fa-brands fa-github text-xs"></i></a>
-          </div>
-        </div>
+  <!-- Process -->
+  <section class="bg-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20">
+      <div class="text-center mb-16">
+        <span class="text-sky-600 font-semibold">HOW WE WORK</span>
+        <h2 class="text-5xl font-semibold tracking-tight mt-4">Our engagement process</h2>
       </div>
 
-      <div class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs">
-        <div>© 2026 Causewave Innovations LLP. All rights reserved.</div>
-        <div class="mt-3 md:mt-0 flex items-center gap-x-2">
-          <span>Designed for impact.</span>
-          <span class="text-emerald-500">•</span>
-          <span>Made with purpose in India</span>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+          <h4 class="text-xl font-semibold mb-2">Discover</h4>
+          <p class="text-slate-600">Understand your CSR mandate, organizational context, and community landscape.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+          <h4 class="text-xl font-semibold mb-2">Design</h4>
+          <p class="text-slate-600">Develop a practical strategy with clear goals, budgets, and measurable indicators.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+          <h4 class="text-xl font-semibold mb-2">Deliver</h4>
+          <p class="text-slate-600">Execute programs on the ground with rigorous monitoring and real-time adjustments.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+          <h4 class="text-xl font-semibold mb-2">Demonstrate</h4>
+          <p class="text-slate-600">Produce credible impact reports that satisfy boards, regulators, and communities.</p>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileBtn.innerHTML = mobileMenu.classList.contains('hidden') ? 
-        '<i class="fa-solid fa-bars text-xl"></i>' : 
-        '<i class="fa-solid fa-times text-xl"></i>';
-    });
-
-    function showModal(index) {
-      alert('Modal will open here with full service details.');
-    }
-  </script>
-</body>
-</html>
+  <!-- CTA -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20 text-center">
+      <h2 class="text-5xl font-semibold tracking-tight mb-6">Ready to strengthen your CSR program?</h2>
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+        Let's discuss which services are the right fit for your organization's goals and compliance requirements.
+      </p>
+      <a href="/contact" class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Talk to Our Team</a>
+    </div>
+  </section>
+</BaseLayout>
