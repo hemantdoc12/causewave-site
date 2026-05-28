@@ -34,19 +34,19 @@ const base = import.meta.env.BASE_URL;
 
   <!-- Stats -->
   <section class="bg-white border-b">
-    <div class="max-w-screen-2xl mx-auto px-8 py-3">
+    <div class="max-w-screen-2xl mx-auto px-8 py-2">
       <div class="grid md:grid-cols-3 gap-4 text-center">
         <div>
-          <div class="text-xl font-bold text-sky-600">50+</div>
-          <div class="text-slate-600 text-xs">Happy Clients</div>
+          <div class="text-2xl font-bold text-sky-600 counter" data-target="50">0</div>
+          <div class="text-slate-600 text-sm">Happy Clients</div>
         </div>
         <div>
-          <div class="text-xl font-bold text-teal-600">₹10Cr+</div>
-          <div class="text-slate-600 text-xs">CSR Impact Generated</div>
+          <div class="text-2xl font-bold text-teal-600">₹<span class="counter" data-target="10">0</span>Cr+</div>
+          <div class="text-slate-600 text-sm">CSR Impact Generated</div>
         </div>
         <div>
-          <div class="text-xl font-bold text-emerald-600">100%</div>
-          <div class="text-slate-600 text-xs">Compliance Success</div>
+          <div class="text-2xl font-bold text-emerald-600"><span class="counter" data-target="100">0</span>%</div>
+          <div class="text-slate-600 text-sm">Compliance Success</div>
         </div>
       </div>
     </div>
@@ -121,3 +121,42 @@ const base = import.meta.env.BASE_URL;
   </section>
 
 </BaseLayout>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.counter');
+  const speed = 50;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsSection = document.querySelector('.counter')?.closest('section');
+  if (statsSection) {
+    observer.observe(statsSection);
+  }
+});
+</script>
