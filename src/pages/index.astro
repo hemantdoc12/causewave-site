@@ -12,55 +12,55 @@ const base = import.meta.env.BASE_URL;
   activePage="home"
 >
   <!-- Hero -->
-  <header class="hero-bg text-white pt-16 pb-16">
+  <header class="hero-bg text-white py-12">
     <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-8 items-center relative z-10">
       <div class="md:col-span-7">
-        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold tracking-tighter leading-tight mb-6">
+        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-semibold tracking-tighter leading-tight mb-4">
           CSR Programs That <span class="bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">Actually Work</span>
         </h1>
-        <p class="max-w-lg text-xl text-slate-300 mb-6">
+        <p class="max-w-lg text-lg text-slate-300 mb-5">
           From strategy to community impact — we build programs that satisfy boards, regulators, and the people they serve.
         </p>
-        <div class="flex gap-4">
-          <a href={`${base}services`} class="px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Explore Services</a>
-          <a href={`${base}contact`} class="px-8 py-4 border border-white/40 rounded-3xl font-semibold">Book a Strategy Call</a>
+        <div class="flex gap-3">
+          <a href={`${base}services`} class="px-6 py-3 bg-white text-slate-900 rounded-3xl font-semibold text-sm">Explore Services</a>
+          <a href={`${base}contact`} class="px-6 py-3 border border-white/40 rounded-3xl font-semibold text-sm">Book a Strategy Call</a>
         </div>
       </div>
       <div class="md:col-span-5 flex justify-center">
-        <img src={`${base}logo_1.png`} alt="Causewave" class="w-[320px] hero-logo">
+        <img src={`${base}logo_1.png`} alt="Causewave" class="w-[280px] hero-logo">
       </div>
     </div>
   </header>
 
   <!-- Services Section -->
-  <section id="services" class="max-w-screen-2xl mx-auto px-8 py-20">
+  <section id="services" class="max-w-screen-2xl mx-auto px-8 py-12">
     <div class="text-center mb-8">
-      <span class="text-sky-600 font-semibold">WHAT WE DELIVER</span>
-      <h2 class="text-5xl font-semibold tracking-tight mt-4">CSR support across the full program cycle</h2>
+      <span class="text-sky-600 font-semibold text-sm">WHAT WE DELIVER</span>
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mt-2">CSR support across the full program cycle</h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <a href={`${base}services`} class="service-card bg-white border p-8 rounded-3xl hover:-translate-y-1 transition-all block">
-        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6"><i class="fa-solid fa-handshake text-3xl text-sky-600"></i></div>
-        <h3 class="text-2xl font-semibold mb-3">CSR Strategy & Compliance</h3>
-        <p class="text-slate-600">Shape CSR priorities, annual action plans, partner alignment, and reporting readiness around clear statutory and board expectations.</p>
+    <div class="grid md:grid-cols-3 gap-5">
+      <a href={`${base}services`} class="service-card bg-white border p-6 rounded-2xl hover:-translate-y-1 transition-all block">
+        <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-handshake text-2xl text-sky-600"></i></div>
+        <h3 class="text-xl font-semibold mb-2">CSR Strategy & Compliance</h3>
+        <p class="text-slate-600 text-sm">Shape CSR priorities, annual action plans, partner alignment, and reporting readiness around clear statutory and board expectations.</p>
       </a>
 
-      <a href={`${base}services`} class="service-card bg-white border p-8 rounded-3xl hover:-translate-y-1 transition-all block">
-        <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mb-6"><i class="fa-solid fa-sitemap text-3xl text-teal-600"></i></div>
-        <h3 class="text-2xl font-semibold mb-3">Program Design & Budgeting</h3>
-        <p class="text-slate-600">Design practical CSR initiatives across health, education, livelihoods, sustainability, and community development with measurable outputs.</p>
+      <a href={`${base}services`} class="service-card bg-white border p-6 rounded-2xl hover:-translate-y-1 transition-all block">
+        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-sitemap text-2xl text-teal-600"></i></div>
+        <h3 class="text-xl font-semibold mb-2">Program Design & Budgeting</h3>
+        <p class="text-slate-600 text-sm">Design practical CSR initiatives across health, education, livelihoods, sustainability, and community development with measurable outputs.</p>
       </a>
 
-      <a href={`${base}services`} class="service-card bg-white border p-8 rounded-3xl hover:-translate-y-1 transition-all block">
-        <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6"><i class="fa-solid fa-chart-line text-3xl text-emerald-600"></i></div>
-        <h3 class="text-2xl font-semibold mb-3">Impact Measurement & Reporting</h3>
-        <p class="text-slate-600">Build credible M&E frameworks, collect field data, and produce board-ready impact reports that satisfy regulators and stakeholders.</p>
+      <a href={`${base}services`} class="service-card bg-white border p-6 rounded-2xl hover:-translate-y-1 transition-all block">
+        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-chart-line text-2xl text-emerald-600"></i></div>
+        <h3 class="text-xl font-semibold mb-2">Impact Measurement & Reporting</h3>
+        <p class="text-slate-600 text-sm">Build credible M&E frameworks, collect field data, and produce board-ready impact reports that satisfy regulators and stakeholders.</p>
       </a>
     </div>
 
-    <div class="text-center mt-12">
-      <a href={`${base}services`} class="inline-flex px-8 py-4 bg-slate-900 text-white rounded-3xl font-semibold hover:bg-sky-600 transition-all">
+    <div class="text-center mt-8">
+      <a href={`${base}services`} class="inline-flex px-6 py-3 bg-slate-900 text-white rounded-3xl font-semibold text-sm hover:bg-sky-600 transition-all">
         View All Services <i class="fa-solid fa-arrow-right ml-2"></i>
       </a>
     </div>
@@ -68,33 +68,33 @@ const base = import.meta.env.BASE_URL;
 
   <!-- About Preview -->
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-8 items-center">
+    <div class="max-w-screen-2xl mx-auto px-8 py-12 grid md:grid-cols-2 gap-8 items-center">
       <div>
-        <span class="text-sky-600 font-semibold">WHO WE ARE</span>
-        <h2 class="text-5xl font-semibold tracking-tight mt-4 mb-6">Bridging CSR compliance and real community impact</h2>
-        <p class="text-lg text-slate-600 leading-relaxed mb-6">
+        <span class="text-sky-600 font-semibold text-sm">WHO WE ARE</span>
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mt-2 mb-4">Bridging CSR compliance and real community impact</h2>
+        <p class="text-slate-600 mb-5">
           Most CSR programs struggle to be both compliant and truly impactful. Causewave exists to close that gap — with 18+ years of public health leadership and field expertise across India.
         </p>
-        <a href={`${base}about`} class="inline-flex px-6 py-3 border border-slate-300 rounded-3xl font-semibold hover:bg-slate-100 transition-all">
+        <a href={`${base}about`} class="inline-flex px-5 py-2.5 border border-slate-300 rounded-3xl font-semibold text-sm hover:bg-slate-100 transition-all">
           Learn More About Us <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-6">
-        <div class="bg-slate-50 p-8 rounded-3xl text-center">
-          <div class="text-4xl font-bold text-sky-600 mb-2">18+</div>
-          <div class="text-slate-600 font-medium">Years of Public Health Leadership</div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-5 rounded-2xl text-center">
+          <div class="text-3xl font-bold text-sky-600 mb-1">18+</div>
+          <div class="text-slate-600 text-sm font-medium">Years of Public Health Leadership</div>
         </div>
-        <div class="bg-slate-50 p-8 rounded-3xl text-center">
-          <div class="text-4xl font-bold text-teal-600 mb-2">33L+</div>
-          <div class="text-slate-600 font-medium">Vaccination Doses in a Single Day</div>
+        <div class="bg-slate-50 p-5 rounded-2xl text-center">
+          <div class="text-3xl font-bold text-teal-600 mb-1">33L+</div>
+          <div class="text-slate-600 text-sm font-medium">Vaccination Doses in a Single Day</div>
         </div>
-        <div class="bg-slate-50 p-8 rounded-3xl text-center">
-          <div class="text-4xl font-bold text-emerald-600 mb-2">5+</div>
-          <div class="text-slate-600 font-medium">States Across India</div>
+        <div class="bg-slate-50 p-5 rounded-2xl text-center">
+          <div class="text-3xl font-bold text-emerald-600 mb-1">5+</div>
+          <div class="text-slate-600 text-sm font-medium">States Across India</div>
         </div>
-        <div class="bg-slate-50 p-8 rounded-3xl text-center">
-          <div class="text-4xl font-bold text-sky-600 mb-2">SKOCH</div>
-          <div class="text-slate-600 font-medium">Gold Award Winner</div>
+        <div class="bg-slate-50 p-5 rounded-2xl text-center">
+          <div class="text-3xl font-bold text-sky-600 mb-1">SKOCH</div>
+          <div class="text-slate-600 text-sm font-medium">Gold Award Winner</div>
         </div>
       </div>
     </div>
