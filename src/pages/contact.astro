@@ -10,58 +10,264 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   canonicalPath="/contact"
   activePage="contact"
 >
-  <div class="max-w-2xl mx-auto px-8 py-20">
-    <h1 class="text-6xl font-semibold tracking-tight">Ready to build CSR programs that deliver real results?</h1>
-    <p class="mt-6 text-xl text-slate-600">Whether you're planning your first CSR initiative or looking to strengthen existing programs, our team is here to help.</p>
-
-    <form class="mt-12 space-y-6" action="https://formspree.io/f/PLACEHOLDER" method="POST">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label for="name" class="block text-sm font-medium text-slate-600 mb-2">Your Name</label>
-          <input type="text" id="name" name="name" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Priya Sharma">
-        </div>
-        <div>
-          <label for="company" class="block text-sm font-medium text-slate-600 mb-2">Company</label>
-          <input type="text" id="company" name="company" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Tata Consumer Products">
-        </div>
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium text-slate-600 mb-2">Work Email</label>
-        <input type="email" id="email" name="email" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="you@company.com">
-      </div>
-      <div>
-        <label for="message" class="block text-sm font-medium text-slate-600 mb-2">Tell us about your project</label>
-        <textarea id="message" name="message" rows="6" required class="w-full border border-slate-200 rounded-3xl px-5 py-4" placeholder="We're looking to measure the impact of our education initiative across 5 states..."></textarea>
-      </div>
-      <button type="submit" class="w-full py-4 bg-gradient-to-r from-sky-500 to-teal-500 text-white font-semibold rounded-3xl hover:shadow-lg hover:shadow-sky-500/25 transition-all">Send Message</button>
-      <p class="text-sm text-slate-500 text-center">We typically respond within 24 hours.</p>
-    </form>
+  <!-- Hero -->
+  <div class="bg-slate-900 text-white py-20">
+    <div class="max-w-screen-2xl mx-auto px-8 text-center">
+      <h1 class="text-6xl font-semibold tracking-tight">Get In Touch</h1>
+      <p class="mt-4 text-xl text-slate-300 max-w-2xl mx-auto">Ready to revolutionize your CSR approach? Let's discuss how our technology-integrated solutions can transform your social impact initiatives</p>
+    </div>
   </div>
 
-  <!-- Contact Info -->
+  <!-- CTA Stats -->
+  <section class="bg-white border-b">
+    <div class="max-w-screen-2xl mx-auto px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-sky-600 mb-2">50+</div>
+          <div class="text-slate-600 font-medium">Happy Clients</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-teal-600 mb-2">₹10Cr+</div>
+          <div class="text-slate-600 font-medium">CSR Impact Generated</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-600 mb-2">100%</div>
+          <div class="text-slate-600 font-medium">Compliance Success</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="max-w-screen-2xl mx-auto px-8 py-20">
+    <div class="grid lg:grid-cols-12 gap-16">
+      <!-- Form -->
+      <div class="lg:col-span-7">
+        <h2 class="text-3xl font-semibold tracking-tight mb-2">Send Us a Message</h2>
+        <p class="text-slate-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+        <form class="space-y-6" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="firstName" class="block text-sm font-medium text-slate-600 mb-2">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="First name">
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-medium text-slate-600 mb-2">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-600 mb-2">Work Email *</label>
+              <input type="email" id="email" name="email" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="you@company.com">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-slate-600 mb-2">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="+91 XXXXX XXXXX">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="company" class="block text-sm font-medium text-slate-600 mb-2">Company Name</label>
+              <input type="text" id="company" name="company" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Tata Consumer Products">
+            </div>
+            <div>
+              <label for="designation" class="block text-sm font-medium text-slate-600 mb-2">Your Designation</label>
+              <input type="text" id="designation" name="designation" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="e.g., CEO, CSR Manager">
+            </div>
+          </div>
+
+          <div>
+            <label for="service" class="block text-sm font-medium text-slate-600 mb-2">Service Interest *</label>
+            <select id="service" name="service" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
+              <option value="">Select Primary Service Interest</option>
+              <optgroup label="Corporate Social Responsibility">
+                <option value="csr-strategy">CSR Strategy & Planning</option>
+                <option value="program-implementation">Program Implementation</option>
+                <option value="compliance-reporting">Compliance & Reporting</option>
+                <option value="stakeholder-engagement">Stakeholder Engagement</option>
+                <option value="impact-measurement">Impact Measurement</option>
+                <option value="sustainability">Sustainability Consulting</option>
+              </optgroup>
+              <optgroup label="Information Technology">
+                <option value="software-development">Custom Software Development</option>
+                <option value="system-integration">System Integration</option>
+                <option value="digital-transformation">Digital Transformation</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="cybersecurity">Cybersecurity</option>
+              </optgroup>
+              <optgroup label="AI & Innovation">
+                <option value="ai-video-generation">AI-Based Video Generation</option>
+                <option value="ai-content-creation">AI Content Creation</option>
+                <option value="automation-solutions">Automation Solutions</option>
+              </optgroup>
+              <option value="consultation">General Consultation</option>
+            </select>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="budget" class="block text-sm font-medium text-slate-600 mb-2">Project Budget Range</label>
+              <select id="budget" name="budget" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
+                <option value="">Select Budget Range</option>
+                <option value="under-5l">Under ₹5 Lakhs</option>
+                <option value="5l-10l">₹5 - 10 Lakhs</option>
+                <option value="10l-25l">₹10 - 25 Lakhs</option>
+                <option value="25l-50l">₹25 - 50 Lakhs</option>
+                <option value="50l-1cr">₹50 Lakhs - 1 Crore</option>
+                <option value="above-1cr">Above ₹1 Crore</option>
+                <option value="discuss">Prefer to Discuss</option>
+              </select>
+            </div>
+            <div>
+              <label for="timeline" class="block text-sm font-medium text-slate-600 mb-2">Project Timeline</label>
+              <select id="timeline" name="timeline" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
+                <option value="">Select Timeline</option>
+                <option value="urgent">Urgent (Within 1 month)</option>
+                <option value="short-term">Short-term (1-3 months)</option>
+                <option value="medium-term">Medium-term (3-6 months)</option>
+                <option value="long-term">Long-term (6+ months)</option>
+                <option value="ongoing">Ongoing Partnership</option>
+                <option value="planning">Still Planning</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-slate-600 mb-2">Project Details & Requirements *</label>
+            <textarea id="message" name="message" rows="5" required class="w-full border border-slate-200 rounded-2xl px-5 py-4" placeholder="Please describe your project requirements, goals, challenges, and any specific questions you have for us..."></textarea>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="newsletter" name="newsletter" class="mt-1">
+            <label for="newsletter" class="text-sm text-slate-600">Subscribe to our newsletter for CSR insights and technology updates</label>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="privacy" name="privacy" required class="mt-1">
+            <label for="privacy" class="text-sm text-slate-600">I agree to the <a href="#" class="text-sky-600 hover:underline">Privacy Policy</a> and <a href="#" class="text-sky-600 hover:underline">Terms of Service</a> *</label>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-sky-500 to-teal-500 text-white font-semibold rounded-3xl hover:shadow-lg hover:shadow-sky-500/25 transition-all">
+            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+          </button>
+          <p class="text-sm text-slate-500 text-center">We typically respond within 24 hours.</p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-5 space-y-8">
+        <!-- Contact Methods -->
+        <div class="bg-slate-50 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-envelope text-xl text-sky-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900">Email Us</div>
+                <a href="mailto:hello@causewave.co.in" class="text-slate-600 hover:text-sky-600">hello@causewave.co.in</a>
+                <div class="text-sm text-slate-500">Get detailed responses within 24 hours</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-teal-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-phone text-xl text-teal-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900">Call Us</div>
+                <div class="text-slate-600">+91 XXXXX XXXXX</div>
+                <div class="text-sm text-slate-500">Mon-Fri, 9 AM - 6 PM IST</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-xl text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900">Visit Us</div>
+                <div class="text-slate-600">Ahmedabad, Gujarat, India</div>
+                <div class="text-sm text-slate-500">Schedule an appointment for in-person meetings</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-violet-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <i class="fa-brands fa-linkedin-in text-xl text-violet-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-900">LinkedIn</div>
+                <div class="text-slate-600">Connect with us professionally</div>
+                <div class="text-sm text-slate-500">Follow for industry insights and updates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="bg-slate-50 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6">Business Hours</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-3 border-b border-slate-200">
+              <span class="text-slate-600">Monday - Friday</span>
+              <span class="font-medium text-slate-900">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-200">
+              <span class="text-slate-600">Saturday</span>
+              <span class="font-medium text-slate-900">10:00 AM - 2:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <span class="text-slate-600">Sunday</span>
+              <span class="font-medium text-slate-500">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto px-8 py-16">
-      <div class="grid md:grid-cols-3 gap-12 text-center">
-        <div>
-          <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fa-solid fa-envelope text-2xl text-sky-600"></i>
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Email</h4>
-          <a href="mailto:hello@causewave.co.in" class="text-slate-600 hover:text-sky-600">hello@causewave.co.in</a>
+    <div class="max-w-screen-2xl mx-auto px-8 py-20">
+      <div class="text-center mb-16">
+        <span class="text-sky-600 font-semibold">FAQ</span>
+        <h2 class="text-5xl font-semibold tracking-tight mt-4">Frequently Asked Questions</h2>
+        <p class="mt-4 text-xl text-slate-600">Quick answers to common questions about our services</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">What is the typical timeline for CSR project implementation?</h3>
+          <p class="text-slate-600">CSR project timelines vary based on scope and complexity. Simple compliance projects can be completed in 1-2 months, while comprehensive CSR strategy development and implementation typically takes 3-6 months.</p>
         </div>
-        <div>
-          <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fa-solid fa-location-dot text-2xl text-teal-600"></i>
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Location</h4>
-          <p class="text-slate-600">Ahmedabad, Gujarat, India</p>
+
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">Do you provide ongoing support after project completion?</h3>
+          <p class="text-slate-600">Yes, we offer comprehensive post-implementation support including monitoring, reporting, optimization, and maintenance services to ensure long-term success of your initiatives.</p>
         </div>
-        <div>
-          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fa-solid fa-clock text-2xl text-emerald-600"></i>
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Response Time</h4>
-          <p class="text-slate-600">Within 24 hours</p>
+
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">Can you help with CSR compliance and regulatory requirements?</h3>
+          <p class="text-slate-600">Absolutely. We specialize in ensuring full compliance with all CSR regulations, including the Companies Act 2013 requirements, board committee formation, and statutory reporting.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">What makes your AI video generation different?</h3>
+          <p class="text-slate-600">Our AI video generation platform combines advanced machine learning with business context understanding, enabling creation of professional, brand-aligned content at scale with minimal human intervention.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">Do you work with small and medium enterprises (SMEs)?</h3>
+          <p class="text-slate-600">Yes, we work with businesses of all sizes. Our solutions are scalable and can be customized to meet the specific needs and budgets of SMEs as well as large corporations.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl">
+          <h3 class="text-lg font-semibold mb-3">How do you measure the impact of CSR initiatives?</h3>
+          <p class="text-slate-600">We use comprehensive impact measurement frameworks that track quantitative metrics (beneficiaries reached, funds utilized) and qualitative outcomes (social change, community feedback) with regular reporting.</p>
         </div>
       </div>
     </div>

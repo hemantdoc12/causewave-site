@@ -1,0 +1,250 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Insights & Thought Leadership | Causewave Innovations LLP"
+  description="Expert insights on CSR consulting, healthcare innovation, and technology-enabled social impact from Dr. Hemant Patel and the Causewave team."
+  ogTitle="Insights | Causewave Innovations LLP"
+  ogDescription="Thought leadership on CSR strategy, healthcare delivery innovation, and technology-enabled social impact."
+  canonicalPath="/insights"
+  activePage="insights"
+>
+  <!-- Hero -->
+  <div class="bg-slate-900 text-white py-20">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h1 class="text-6xl font-semibold tracking-tight">Insights & Thought Leadership</h1>
+      <p class="mt-4 text-xl text-slate-300 max-w-2xl">Expert perspectives on CSR innovation, healthcare delivery, and technology-enabled social impact from our team</p>
+    </div>
+  </div>
+
+  <!-- Featured Article -->
+  <section class="max-w-screen-2xl mx-auto px-8 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center bg-gradient-to-br from-slate-50 to-white border rounded-[2.5rem] p-10 md:p-14">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <i class="fa-solid fa-trophy"></i> SKOCH Gold Award Winner
+        </div>
+        <h2 class="text-4xl font-semibold tracking-tight mb-4">Innovation in Last-Mile Healthcare Delivery: The Chitta Express Model</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-6">How we delivered 33+ lakh vaccinations to remote tribal areas using innovative mobile healthcare units, overcoming geographical and cultural barriers through technology integration.</p>
+        <div class="flex flex-wrap gap-4 text-sm text-slate-500 mb-8">
+          <span><i class="fa-solid fa-user mr-1"></i> Dr. Hemant L. Patel</span>
+          <span><i class="fa-solid fa-clock mr-1"></i> 8 min read</span>
+          <span><i class="fa-solid fa-tag mr-1"></i> Healthcare Innovation</span>
+        </div>
+        <a href="/insights/chitta-express-innovation" class="inline-flex px-8 py-4 bg-slate-900 text-white rounded-3xl font-semibold hover:bg-sky-600 transition-all">
+          Read Full Article <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white border p-6 rounded-3xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-sky-600 mb-1">33L+</div>
+          <div class="text-sm text-slate-600">Vaccinations Delivered</div>
+        </div>
+        <div class="bg-white border p-6 rounded-3xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-teal-600 mb-1">20</div>
+          <div class="text-sm text-slate-600">Mobile Units Deployed</div>
+        </div>
+        <div class="bg-white border p-6 rounded-3xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-emerald-600 mb-1">100%</div>
+          <div class="text-sm text-slate-600">Remote Areas Covered</div>
+        </div>
+        <div class="bg-white border p-6 rounded-3xl text-center shadow-sm">
+          <div class="text-3xl font-bold text-sky-600 mb-1">2.4M</div>
+          <div class="text-sm text-slate-600">Population Served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="bg-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20">
+      <div class="text-center mb-12">
+        <span class="text-sky-600 font-semibold">EXPLORE BY CATEGORY</span>
+        <h2 class="text-5xl font-semibold tracking-tight mt-4">Latest Articles</h2>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-slate-900 text-white" data-category="all">All Articles</button>
+        <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold border border-slate-200 hover:bg-slate-100" data-category="healthcare">Healthcare Innovation</button>
+        <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold border border-slate-200 hover:bg-slate-100" data-category="csr">CSR Strategy</button>
+        <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold border border-slate-200 hover:bg-slate-100" data-category="technology">Technology Solutions</button>
+        <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold border border-slate-200 hover:bg-slate-100" data-category="leadership">Leadership Insights</button>
+      </div>
+
+      <!-- Articles -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Article 1 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="technology csr">
+          <div class="bg-gradient-to-br from-sky-500 to-sky-700 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">Technology & CSR</span>
+            <h3 class="text-2xl font-semibold">Technology-Enabled CSR: Lessons from the Field</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">How digital platforms and AI-powered solutions transformed our vaccination drive, creating scalable frameworks for CSR program management and impact measurement.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Coming Soon</span>
+              <span class="text-slate-300">|</span>
+              <span>6 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="healthcare leadership">
+          <div class="bg-gradient-to-br from-teal-500 to-teal-700 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">Community Engagement</span>
+            <h3 class="text-2xl font-semibold">Overcoming Cultural Barriers in Health Initiatives</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">Strategic approaches to building trust with tribal populations, leveraging local influencers, and designing culturally sensitive health programs that drive real adoption.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Coming Soon</span>
+              <span class="text-slate-300">|</span>
+              <span>7 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="csr">
+          <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">CSR Strategy</span>
+            <h3 class="text-2xl font-semibold">Beyond Networks: Redefining CSR Resource Mapping for India's NGOs</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">Strategic insights on how technology-enabled CSR analytics can unlock ₹20,000+ crore in untapped funding by moving beyond traditional networking to data-driven collaboration.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Recently Published</span>
+              <span class="text-slate-300">|</span>
+              <span>4 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="csr leadership">
+          <div class="bg-gradient-to-br from-violet-500 to-violet-700 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">Development Sector</span>
+            <h3 class="text-2xl font-semibold">A Problem Unacknowledged is a Solution Out of Reach</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">Addressing India's NGO funding crisis: How FCRA changes and USAID withdrawal are forcing organizations to adapt their fundraising strategies and embrace corporate collaboration.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Recently Published</span>
+              <span class="text-slate-300">|</span>
+              <span>5 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="technology">
+          <div class="bg-gradient-to-br from-sky-600 to-indigo-600 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">AI & Innovation</span>
+            <h3 class="text-2xl font-semibold">The Art of Sahdev: Ancient Wisdom for Modern AI Mastery</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">How the strategic wisdom of Sahdev from Mahabharata provides a framework for effective prompt engineering and AI interaction in modern business applications.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Recently Published</span>
+              <span class="text-slate-300">|</span>
+              <span>6 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card bg-white border rounded-3xl overflow-hidden hover:-translate-y-1 transition-all" data-category="healthcare">
+          <div class="bg-gradient-to-br from-rose-500 to-rose-700 p-8 text-white">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-4">Healthcare Policy</span>
+            <h3 class="text-2xl font-semibold">Commentary: Family Identifier Required?</h3>
+          </div>
+          <div class="p-8">
+            <p class="text-slate-600 mb-6">Critical analysis of India's health identification systems: Examining whether family health IDs or individual unique health identifiers better serve healthcare delivery needs.</p>
+            <div class="flex items-center gap-4 text-sm text-slate-500 mb-6">
+              <span>Dr. Hemant L. Patel</span>
+              <span class="text-slate-300">|</span>
+              <span>Recently Published</span>
+              <span class="text-slate-300">|</span>
+              <span>3 min read</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700">
+              Read More <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-screen-2xl mx-auto px-8 py-20 text-center">
+      <h2 class="text-5xl font-semibold tracking-tight mb-6">Stay Updated with Our Latest Insights</h2>
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">Get expert perspectives on CSR innovation, healthcare delivery, and social impact delivered to your inbox.</p>
+      <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+        <input type="email" placeholder="Enter your email address" required class="flex-1 px-6 py-4 rounded-3xl text-slate-900 font-medium">
+        <button type="submit" class="px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold hover:bg-slate-100 transition-all">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.article-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-slate-900', 'text-white');
+          b.classList.add('border', 'border-slate-200');
+        });
+        btn.classList.add('bg-slate-900', 'text-white');
+        btn.classList.remove('border', 'border-slate-200');
+
+        const category = btn.getAttribute('data-category');
+
+        articles.forEach(article => {
+          if (category === 'all' || article.getAttribute('data-category').includes(category)) {
+            article.style.display = '';
+          } else {
+            article.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
