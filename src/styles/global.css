@@ -49,21 +49,24 @@ input:focus, textarea:focus {
 
 /* Hero Animation */
 .hero-bg {
-  background: linear-gradient(-45deg, #0F172A, #1e3a5f, #0F172A, #164e63);
-  background-size: 400% 400%;
-  animation: heroGradient 15s ease infinite;
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
+  animation: heroZoom 20s ease-in-out infinite alternate;
 }
 
 .hero-bg::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 50%, rgba(20, 184, 166, 0.1) 0%, transparent 60%);
   animation: heroGlow 8s ease-in-out infinite;
 }
 
@@ -74,17 +77,15 @@ input:focus, textarea:focus {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.4), transparent);
 }
 
-@keyframes heroGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes heroZoom {
+  0% { background-size: 100%; }
+  100% { background-size: 110%; }
 }
 
 @keyframes heroGlow {
-  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
-  33% { transform: translate(5%, -5%) scale(1.1); opacity: 0.8; }
-  66% { transform: translate(-3%, 3%) scale(0.95); opacity: 0.6; }
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
