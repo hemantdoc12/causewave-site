@@ -37,7 +37,7 @@ const base = import.meta.env.BASE_URL;
     <div class="max-w-screen-2xl mx-auto px-8 py-2">
       <div class="grid md:grid-cols-3 gap-4 text-center">
         <div>
-          <div class="text-2xl font-bold text-sky-600 counter" data-target="50">0</div>
+          <div class="text-2xl font-bold text-sky-600"><span class="counter" data-target="50">0</span>+</div>
           <div class="text-slate-600 text-sm">Happy Clients</div>
         </div>
         <div>
@@ -126,17 +126,22 @@ const base = import.meta.env.BASE_URL;
 document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.counter');
   const speed = 50;
+  let animated = false;
 
   const animateCounters = () => {
+    if (animated) return;
+    animated = true;
+    
     counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
+      const target = +counter.getAttribute('data-target');
+      const increment = target / speed;
+      let current = 0;
 
-        if (count < target) {
-          counter.innerText = Math.ceil(count + inc);
-          setTimeout(updateCount, 30);
+      const updateCount = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = Math.ceil(current);
+          requestAnimationFrame(updateCount);
         } else {
           counter.innerText = target;
         }
