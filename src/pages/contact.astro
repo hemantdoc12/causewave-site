@@ -5,215 +5,192 @@ const base = import.meta.env.BASE_URL;
 
 <BaseLayout
   title="Contact Us | Causewave Innovations LLP"
-  description="Ready to build CSR programs that deliver real results? Contact Causewave for strategy, implementation, and impact reporting support. We respond within 24 hours."
+  description="Ready to build CSR programs that deliver real results? Contact Causewave."
   ogTitle="Contact Causewave | CSR Consulting"
-  ogDescription="Let's discuss how we can help you build compliant, measurable, and community-trusted CSR programs."
+  ogDescription="Let's discuss how we can help you build compliant CSR programs."
   canonicalPath="/contact"
   activePage="contact"
 >
   <!-- Hero -->
-  <div class="page-header text-white py-12" style={`background-image: url('${base}contact-bg.jpg')`}>
-    <div class="max-w-screen-2xl mx-auto px-8 text-center relative z-10">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">Get In Touch</h1>
-      <p class="mt-4 text-xl text-slate-300 max-w-2xl mx-auto">Ready to revolutionize your CSR approach? Let's discuss how our technology-integrated solutions can transform your social impact initiatives</p>
+  <div class="page-header text-white py-10" style={`background-image: url('${base}contact-bg.jpg')`}>
+    <div class="max-w-screen-2xl mx-auto px-6 text-center relative z-10">
+      <h1 class="text-3xl sm:text-4xl md:text-4xl font-semibold tracking-tight">Get In Touch</h1>
+      <p class="mt-2 text-base text-slate-300 max-w-xl mx-auto">Ready to transform your CSR approach? Let's talk.</p>
     </div>
   </div>
 
-  <!-- CTA Stats -->
+  <!-- Stats -->
   <section class="bg-white border-b">
-    <div class="max-w-screen-2xl mx-auto px-8 py-12">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
+    <div class="max-w-screen-2xl mx-auto px-6 py-5">
+      <div class="grid md:grid-cols-3 gap-4 text-center">
         <div>
-          <div class="text-4xl font-bold text-sky-600 mb-2">50+</div>
-          <div class="text-slate-600 font-medium">Happy Clients</div>
+          <div class="text-2xl font-bold text-sky-600">50+</div>
+          <div class="text-slate-600 text-sm">Happy Clients</div>
         </div>
         <div>
-          <div class="text-4xl font-bold text-teal-600 mb-2">₹10Cr+</div>
-          <div class="text-slate-600 font-medium">CSR Impact Generated</div>
+          <div class="text-2xl font-bold text-teal-600">₹10Cr+</div>
+          <div class="text-slate-600 text-sm">CSR Impact Generated</div>
         </div>
         <div>
-          <div class="text-4xl font-bold text-emerald-600 mb-2">100%</div>
-          <div class="text-slate-600 font-medium">Compliance Success</div>
+          <div class="text-2xl font-bold text-emerald-600">100%</div>
+          <div class="text-slate-600 text-sm">Compliance Success</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Form & Info -->
-  <section class="max-w-screen-2xl mx-auto px-8 py-12">
-    <div class="grid lg:grid-cols-12 gap-8">
+  <section class="max-w-screen-2xl mx-auto px-6 py-8">
+    <div class="grid lg:grid-cols-12 gap-6">
       <!-- Form -->
       <div class="lg:col-span-7">
-        <h2 class="text-3xl font-semibold tracking-tight mb-2">Send Us a Message</h2>
-        <p class="text-slate-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+        <h2 class="text-xl font-semibold tracking-tight mb-1">Send Us a Message</h2>
+        <p class="text-slate-600 text-sm mb-5">We'll get back to you within 24 hours.</p>
 
-        <form class="space-y-6" action="https://formspree.io/f/PLACEHOLDER" method="POST">
-          <div class="grid md:grid-cols-2 gap-6">
+        <form class="space-y-4" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+          <div class="grid md:grid-cols-2 gap-4">
             <div>
-              <label for="firstName" class="block text-sm font-medium text-slate-600 mb-2">First Name *</label>
-              <input type="text" id="firstName" name="firstName" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="First name">
+              <label for="firstName" class="block text-xs font-medium text-slate-600 mb-1">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="First name">
             </div>
             <div>
-              <label for="lastName" class="block text-sm font-medium text-slate-600 mb-2">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Last name">
+              <label for="lastName" class="block text-xs font-medium text-slate-600 mb-1">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Last name">
             </div>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-2 gap-4">
             <div>
-              <label for="email" class="block text-sm font-medium text-slate-600 mb-2">Work Email *</label>
-              <input type="email" id="email" name="email" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="you@company.com">
+              <label for="email" class="block text-xs font-medium text-slate-600 mb-1">Work Email *</label>
+              <input type="email" id="email" name="email" required class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="you@company.com">
             </div>
             <div>
-              <label for="phone" class="block text-sm font-medium text-slate-600 mb-2">Phone Number</label>
-              <input type="tel" id="phone" name="phone" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="+91 XXXXX XXXXX">
+              <label for="phone" class="block text-xs font-medium text-slate-600 mb-1">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="+91 XXXXX XXXXX">
             </div>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-2 gap-4">
             <div>
-              <label for="company" class="block text-sm font-medium text-slate-600 mb-2">Company Name</label>
-              <input type="text" id="company" name="company" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="Tata Consumer Products">
+              <label for="company" class="block text-xs font-medium text-slate-600 mb-1">Company Name</label>
+              <input type="text" id="company" name="company" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Company">
             </div>
             <div>
-              <label for="designation" class="block text-sm font-medium text-slate-600 mb-2">Your Designation</label>
-              <input type="text" id="designation" name="designation" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5" placeholder="e.g., CEO, CSR Manager">
+              <label for="designation" class="block text-xs font-medium text-slate-600 mb-1">Your Designation</label>
+              <input type="text" id="designation" name="designation" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="e.g., CEO, CSR Manager">
             </div>
           </div>
 
           <div>
-            <label for="service" class="block text-sm font-medium text-slate-600 mb-2">Service Interest *</label>
-            <select id="service" name="service" required class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
-              <option value="">Select Primary Service Interest</option>
-              <optgroup label="Corporate Social Responsibility">
+            <label for="service" class="block text-xs font-medium text-slate-600 mb-1">Service Interest *</label>
+            <select id="service" name="service" required class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm bg-white">
+              <option value="">Select Service</option>
+              <optgroup label="CSR">
                 <option value="csr-strategy">CSR Strategy & Planning</option>
                 <option value="program-implementation">Program Implementation</option>
                 <option value="compliance-reporting">Compliance & Reporting</option>
-                <option value="stakeholder-engagement">Stakeholder Engagement</option>
                 <option value="impact-measurement">Impact Measurement</option>
-                <option value="sustainability">Sustainability Consulting</option>
               </optgroup>
-              <optgroup label="Information Technology">
-                <option value="software-development">Custom Software Development</option>
-                <option value="system-integration">System Integration</option>
+              <optgroup label="Technology">
+                <option value="software-development">Custom Software</option>
                 <option value="digital-transformation">Digital Transformation</option>
-                <option value="cloud-solutions">Cloud Solutions</option>
                 <option value="data-analytics">Data Analytics</option>
-                <option value="cybersecurity">Cybersecurity</option>
               </optgroup>
-              <optgroup label="AI & Innovation">
-                <option value="ai-video-generation">AI-Based Video Generation</option>
-                <option value="ai-content-creation">AI Content Creation</option>
-                <option value="automation-solutions">Automation Solutions</option>
+              <optgroup label="AI">
+                <option value="ai-video-generation">AI Video Generation</option>
               </optgroup>
               <option value="consultation">General Consultation</option>
             </select>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-2 gap-4">
             <div>
-              <label for="budget" class="block text-sm font-medium text-slate-600 mb-2">Project Budget Range</label>
-              <select id="budget" name="budget" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
-                <option value="">Select Budget Range</option>
+              <label for="budget" class="block text-xs font-medium text-slate-600 mb-1">Budget Range</label>
+              <select id="budget" name="budget" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm bg-white">
+                <option value="">Select Budget</option>
                 <option value="under-5l">Under ₹5 Lakhs</option>
-                <option value="5l-10l">₹5 - 10 Lakhs</option>
-                <option value="10l-25l">₹10 - 25 Lakhs</option>
-                <option value="25l-50l">₹25 - 50 Lakhs</option>
-                <option value="50l-1cr">₹50 Lakhs - 1 Crore</option>
+                <option value="5l-25l">₹5 - 25 Lakhs</option>
+                <option value="25l-1cr">₹25 Lakhs - 1 Crore</option>
                 <option value="above-1cr">Above ₹1 Crore</option>
-                <option value="discuss">Prefer to Discuss</option>
               </select>
             </div>
             <div>
-              <label for="timeline" class="block text-sm font-medium text-slate-600 mb-2">Project Timeline</label>
-              <select id="timeline" name="timeline" class="w-full border border-slate-200 rounded-2xl px-5 py-3.5 bg-white">
+              <label for="timeline" class="block text-xs font-medium text-slate-600 mb-1">Timeline</label>
+              <select id="timeline" name="timeline" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm bg-white">
                 <option value="">Select Timeline</option>
                 <option value="urgent">Urgent (Within 1 month)</option>
                 <option value="short-term">Short-term (1-3 months)</option>
                 <option value="medium-term">Medium-term (3-6 months)</option>
                 <option value="long-term">Long-term (6+ months)</option>
-                <option value="ongoing">Ongoing Partnership</option>
-                <option value="planning">Still Planning</option>
               </select>
             </div>
           </div>
 
           <div>
-            <label for="message" class="block text-sm font-medium text-slate-600 mb-2">Project Details & Requirements *</label>
-            <textarea id="message" name="message" rows="5" required class="w-full border border-slate-200 rounded-2xl px-5 py-4" placeholder="Please describe your project requirements, goals, challenges, and any specific questions you have for us..."></textarea>
+            <label for="message" class="block text-xs font-medium text-slate-600 mb-1">Project Details *</label>
+            <textarea id="message" name="message" rows="3" required class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Describe your project requirements..."></textarea>
           </div>
 
-          <div class="flex items-start gap-3">
-            <input type="checkbox" id="newsletter" name="newsletter" class="mt-1">
-            <label for="newsletter" class="text-sm text-slate-600">Subscribe to our newsletter for CSR insights and technology updates</label>
+          <div class="flex items-center gap-2">
+            <input type="checkbox" id="privacy" name="privacy" required class="rounded">
+            <label for="privacy" class="text-xs text-slate-600">I agree to the <a href="#" class="text-sky-600 hover:underline">Privacy Policy</a> *</label>
           </div>
 
-          <div class="flex items-start gap-3">
-            <input type="checkbox" id="privacy" name="privacy" required class="mt-1">
-            <label for="privacy" class="text-sm text-slate-600">I agree to the <a href="#" class="text-sky-600 hover:underline">Privacy Policy</a> and <a href="#" class="text-sky-600 hover:underline">Terms of Service</a> *</label>
-          </div>
-
-          <button type="submit" class="w-full py-4 bg-gradient-to-r from-sky-500 to-teal-500 text-white font-semibold rounded-3xl hover:shadow-lg hover:shadow-sky-500/25 transition-all">
+          <button type="submit" class="w-full py-2.5 bg-gradient-to-r from-sky-500 to-teal-500 text-white font-semibold text-sm rounded-lg hover:shadow-lg transition-all">
             Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
           </button>
-          <p class="text-sm text-slate-500 text-center">We typically respond within 24 hours.</p>
+          <p class="text-xs text-slate-500 text-center">We typically respond within 24 hours.</p>
         </form>
       </div>
 
       <!-- Sidebar -->
-      <div class="lg:col-span-5 space-y-8">
+      <div class="lg:col-span-5 space-y-4">
         <!-- Contact Methods -->
-        <div class="bg-slate-50 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-envelope text-xl text-sky-600"></i>
+        <div class="bg-slate-50 p-5 rounded-xl">
+          <h3 class="text-base font-semibold mb-4">Contact Information</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 bg-sky-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-envelope text-sm text-sky-600"></i>
               </div>
               <div>
-                <div class="font-semibold text-slate-900">Email Us</div>
-                <a href="mailto:info@causewaveinnovations.com" class="text-slate-600 hover:text-sky-600">info@causewaveinnovations.com</a>
-                <div class="text-sm text-slate-500">Get detailed responses within 24 hours</div>
+                <a href="mailto:info@causewaveinnovations.com" class="text-sm text-slate-600 hover:text-sky-600">info@causewaveinnovations.com</a>
               </div>
             </div>
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-teal-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-phone text-xl text-teal-600"></i>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-phone text-sm text-teal-600"></i>
               </div>
               <div>
-                <div class="font-semibold text-slate-900">Call Us</div>
-                <div class="text-slate-600">+91 76005 96053</div>
-                <div class="text-sm text-slate-500">Mon-Fri, 9 AM - 6 PM IST</div>
+                <div class="text-sm text-slate-600">+91 76005 96053</div>
               </div>
             </div>
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-location-dot text-xl text-emerald-600"></i>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-sm text-emerald-600"></i>
               </div>
               <div>
-                <div class="font-semibold text-slate-900">Visit Us</div>
-                <div class="text-slate-600">Ahmedabad, Gujarat, India</div>
-                <div class="text-sm text-slate-500">Schedule an appointment for in-person meetings</div>
+                <div class="text-sm text-slate-600">Ahmedabad, Gujarat, India</div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Business Hours -->
-        <div class="bg-slate-50 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold mb-6">Business Hours</h3>
-          <div class="space-y-3">
-            <div class="flex justify-between items-center py-3 border-b border-slate-200">
-              <span class="text-slate-600">Monday - Friday</span>
-              <span class="font-medium text-slate-900">9:00 AM - 6:00 PM</span>
+        <div class="bg-slate-50 p-5 rounded-xl">
+          <h3 class="text-base font-semibold mb-3">Business Hours</h3>
+          <div class="space-y-1.5 text-sm">
+            <div class="flex justify-between">
+              <span class="text-slate-600">Mon - Fri</span>
+              <span class="font-medium text-slate-900">9 AM - 6 PM</span>
             </div>
-            <div class="flex justify-between items-center py-3 border-b border-slate-200">
+            <div class="flex justify-between">
               <span class="text-slate-600">Saturday</span>
-              <span class="font-medium text-slate-900">10:00 AM - 2:00 PM</span>
+              <span class="font-medium text-slate-900">10 AM - 2 PM</span>
             </div>
-            <div class="flex justify-between items-center py-3">
+            <div class="flex justify-between">
               <span class="text-slate-600">Sunday</span>
-              <span class="font-medium text-slate-500">Closed</span>
+              <span class="text-slate-500">Closed</span>
             </div>
           </div>
         </div>
@@ -223,42 +200,27 @@ const base = import.meta.env.BASE_URL;
 
   <!-- FAQ -->
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto px-8 py-12">
-      <div class="text-center mb-8">
-        <span class="text-sky-600 font-semibold">FAQ</span>
-        <h2 class="text-5xl font-semibold tracking-tight mt-4">Frequently Asked Questions</h2>
-        <p class="mt-4 text-xl text-slate-600">Quick answers to common questions about our services</p>
+    <div class="max-w-screen-2xl mx-auto px-6 py-8">
+      <div class="text-center mb-6">
+        <span class="text-sky-600 font-semibold text-sm">FAQ</span>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mt-1">Frequently Asked Questions</h2>
       </div>
-
-      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">What is the typical timeline for CSR project implementation?</h3>
-          <p class="text-slate-600">CSR project timelines vary based on scope and complexity. Simple compliance projects can be completed in 1-2 months, while comprehensive CSR strategy development and implementation typically takes 3-6 months.</p>
+      <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <div class="bg-slate-50 p-4 rounded-xl">
+          <h3 class="text-sm font-semibold mb-2">What is the typical timeline for CSR projects?</h3>
+          <p class="text-slate-600 text-xs">Simple compliance projects: 1-2 months. Comprehensive strategy: 3-6 months.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">Do you provide ongoing support after project completion?</h3>
-          <p class="text-slate-600">Yes, we offer comprehensive post-implementation support including monitoring, reporting, optimization, and maintenance services to ensure long-term success of your initiatives.</p>
+        <div class="bg-slate-50 p-4 rounded-xl">
+          <h3 class="text-sm font-semibold mb-2">Do you provide ongoing support?</h3>
+          <p class="text-slate-600 text-xs">Yes, we offer monitoring, reporting, and optimization services.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">Can you help with CSR compliance and regulatory requirements?</h3>
-          <p class="text-slate-600">Absolutely. We specialize in ensuring full compliance with all CSR regulations, including the Companies Act 2013 requirements, board committee formation, and statutory reporting.</p>
+        <div class="bg-slate-50 p-4 rounded-xl">
+          <h3 class="text-sm font-semibold mb-2">Can you help with CSR compliance?</h3>
+          <p class="text-slate-600 text-xs">Absolutely. We specialize in Companies Act 2013 compliance.</p>
         </div>
-
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">What makes your AI video generation different?</h3>
-          <p class="text-slate-600">Our AI video generation platform combines advanced machine learning with business context understanding, enabling creation of professional, brand-aligned content at scale with minimal human intervention.</p>
-        </div>
-
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">Do you work with small and medium enterprises (SMEs)?</h3>
-          <p class="text-slate-600">Yes, we work with businesses of all sizes. Our solutions are scalable and can be customized to meet the specific needs and budgets of SMEs as well as large corporations.</p>
-        </div>
-
-        <div class="bg-slate-50 p-6 rounded-3xl">
-          <h3 class="text-lg font-semibold mb-3">How do you measure the impact of CSR initiatives?</h3>
-          <p class="text-slate-600">We use comprehensive impact measurement frameworks that track quantitative metrics (beneficiaries reached, funds utilized) and qualitative outcomes (social change, community feedback) with regular reporting.</p>
+        <div class="bg-slate-50 p-4 rounded-xl">
+          <h3 class="text-sm font-semibold mb-2">Do you work with SMEs?</h3>
+          <p class="text-slate-600 text-xs">Yes, our solutions are scalable for businesses of all sizes.</p>
         </div>
       </div>
     </div>
