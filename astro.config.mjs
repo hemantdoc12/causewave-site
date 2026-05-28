@@ -4,5 +4,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://hemantdoc12.github.io',
-  base: '/causewave-site',
+  base: '/causewave-site/',
+  trailingSlash: 'always',
 });
