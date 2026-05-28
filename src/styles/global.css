@@ -46,3 +46,45 @@ input:focus, textarea:focus {
   border-color: #0EA5E9;
   box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
 }
+
+/* Hero Animation */
+.hero-bg {
+  background: linear-gradient(-45deg, #0F172A, #1e3a5f, #0F172A, #164e63);
+  background-size: 400% 400%;
+  animation: heroGradient 15s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
+  animation: heroGlow 8s ease-in-out infinite;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.3), transparent);
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes heroGlow {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  33% { transform: translate(5%, -5%) scale(1.1); opacity: 0.8; }
+  66% { transform: translate(-3%, 3%) scale(0.95); opacity: 0.6; }
+}
