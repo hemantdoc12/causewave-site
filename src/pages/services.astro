@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -366,7 +367,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
         Let's discuss which services are the right fit for your organization's goals and compliance requirements.
       </p>
-      <a href="/contact" class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Talk to Our Team</a>
+      <a href={`${base}contact`} class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Talk to Our Team</a>
     </div>
   </section>
 </BaseLayout>

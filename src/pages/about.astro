@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -94,7 +95,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
         Talk to our team about how Causewave can help your organization deliver CSR programs that are compliant, measurable, and genuinely trusted by communities.
       </p>
-      <a href="/contact" class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Start a Conversation</a>
+      <a href={`${base}contact`} class="inline-flex px-8 py-4 bg-white text-slate-900 rounded-3xl font-semibold">Start a Conversation</a>
     </div>
   </section>
 </BaseLayout>
