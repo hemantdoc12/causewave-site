@@ -192,11 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Privacy checkbox validation
       const privacy = document.getElementById('privacy');
       const privacyError = document.getElementById('privacy-error');
-      if (!privacy.checked) {
-        privacyError.classList.remove('hidden');
-        privacy.focus();
+      if (!privacy || !privacy.checked) {
+        if (privacyError) privacyError.classList.remove('hidden');
+        if (privacy) privacy.focus();
         return;
-      } else {
+      } else if (privacyError) {
         privacyError.classList.add('hidden');
       }
 
