@@ -6,4 +6,7 @@ export default defineConfig({
   site: 'https://hemantdoc12.github.io',
   base: '/causewave-site/',
   trailingSlash: 'always',
+  build: {
+    format: 'directory',
+  },
 });

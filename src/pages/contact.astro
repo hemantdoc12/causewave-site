@@ -112,8 +112,9 @@ const base = import.meta.env.BASE_URL;
           </div>
 
           <div class="flex items-center gap-2">
-            <input type="checkbox" id="privacy" name="privacy" required class="rounded">
+            <input type="checkbox" id="privacy" name="privacy" required class="rounded" aria-describedby="privacy-error">
             <label for="privacy" class="text-xs text-slate-600">I agree to the <a href={`${base}privacy-policy`} class="text-sky-600 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a> *</label>
+            <span id="privacy-error" class="hidden text-red-500 text-xs ml-2">Required</span>
           </div>
 
           <button type="submit" class="w-full py-2.5 bg-gradient-to-r from-sky-500 to-teal-500 text-white font-semibold text-sm rounded-lg hover:shadow-lg transition-all">
@@ -187,6 +188,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      // Privacy checkbox validation
+      const privacy = document.getElementById('privacy');
+      const privacyError = document.getElementById('privacy-error');
+      if (!privacy.checked) {
+        privacyError.classList.remove('hidden');
+        privacy.focus();
+        return;
+      } else {
+        privacyError.classList.add('hidden');
+      }
+
       const formData = new FormData(form);
       const firstName = formData.get('firstName');
       const lastName = formData.get('lastName');
